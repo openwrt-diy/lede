@@ -33,13 +33,9 @@ jobs:
         with:
           ref: master
 
-      - name: Space cleanup
-          df -h
-
       - name: Update feeds
         run: |
           cat .config
-
 
       - name: Generate configuration file
         run: make defconfig
